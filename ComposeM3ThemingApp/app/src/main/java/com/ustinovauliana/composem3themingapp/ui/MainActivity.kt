@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui
+package com.ustinovauliana.composem3themingapp.ui
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
@@ -26,7 +26,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.reply.data.LocalEmailsDataProvider
+import com.ustinovauliana.composem3themingapp.data.LocalEmailsDataProvider
 
 
 class MainActivity : ComponentActivity() {

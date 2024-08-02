@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui
+package com.ustinovauliana.composem3themingapp.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Article
 import androidx.compose.material.icons.filled.Article
 import androidx.compose.material.icons.filled.Inbox
 import androidx.compose.material.icons.filled.People
@@ -33,7 +34,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
-import com.example.reply.R
+import com.ustinovauliana.composem3themingapp.R
 
 @Composable
 fun ReplyApp(
@@ -115,8 +116,8 @@ val TOP_LEVEL_DESTINATIONS = listOf(
     ),
     ReplyTopLevelDestination(
         route = ReplyRoute.ARTICLES,
-        selectedIcon = Icons.Default.Article,
-        unselectedIcon = Icons.Default.Article,
+        selectedIcon = Icons.AutoMirrored.Filled.Article,
+        unselectedIcon = Icons.AutoMirrored.Filled.Article,
         iconTextId = R.string.tab_article
     ),
     ReplyTopLevelDestination(

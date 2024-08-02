@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.reply.data
+package com.ustinovauliana.composem3themingapp.data
 
-import com.example.reply.R
+import com.ustinovauliana.composem3themingapp.R
 
 /**
  * An static data store of [Account]s. This includes both [Account]s owned by the current user and

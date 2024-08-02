@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui
+package com.ustinovauliana.composem3themingapp.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.reply.data.Email
-import com.example.reply.data.LocalEmailsDataProvider
+import com.ustinovauliana.composem3themingapp.data.Email
+import com.ustinovauliana.composem3themingapp.data.LocalEmailsDataProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch

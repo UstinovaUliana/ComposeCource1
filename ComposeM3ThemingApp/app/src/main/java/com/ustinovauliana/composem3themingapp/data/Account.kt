@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.reply.data
+package com.ustinovauliana.composem3themingapp.data
 
 import androidx.annotation.DrawableRes
 

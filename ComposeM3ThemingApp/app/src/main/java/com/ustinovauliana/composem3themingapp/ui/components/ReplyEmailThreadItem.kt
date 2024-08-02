@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui.components
+package com.ustinovauliana.composem3themingapp.ui.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -36,8 +36,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.reply.R
-import com.example.reply.data.Email
+import com.ustinovauliana.composem3themingapp.R
+import com.ustinovauliana.composem3themingapp.data.Email
 
 @Composable
 fun ReplyEmailThreadItem(

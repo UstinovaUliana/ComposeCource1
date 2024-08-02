@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui.components
+package com.ustinovauliana.composem3themingapp.ui.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -26,7 +26,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.Card
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -38,8 +37,8 @@ import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.example.reply.R
-import com.example.reply.data.Email
+import com.ustinovauliana.composem3themingapp.R
+import com.ustinovauliana.composem3themingapp.data.Email
 
 @Composable
 fun ReplyEmailListItem(

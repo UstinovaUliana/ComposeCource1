@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.reply.ui
+package com.ustinovauliana.composem3themingapp.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Box
@@ -35,12 +35,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.reply.R
-import com.example.reply.data.Email
-import com.example.reply.ui.components.EmailDetailAppBar
-import com.example.reply.ui.components.ReplyEmailListItem
-import com.example.reply.ui.components.ReplyEmailThreadItem
-import com.example.reply.ui.components.ReplySearchBar
+import com.ustinovauliana.composem3themingapp.R
+import com.ustinovauliana.composem3themingapp.data.Email
+import com.ustinovauliana.composem3themingapp.ui.components.EmailDetailAppBar
+import com.ustinovauliana.composem3themingapp.ui.components.ReplyEmailListItem
+import com.ustinovauliana.composem3themingapp.ui.components.ReplyEmailThreadItem
+import com.ustinovauliana.composem3themingapp.ui.components.ReplySearchBar
 
 
 @Composable
