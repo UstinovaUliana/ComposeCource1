@@ -23,6 +23,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -39,18 +42,30 @@ class MainViewModel @Inject constructor(
     val hotels: List<ExploreModel> = destinationsRepository.hotels
     val restaurants: List<ExploreModel> = destinationsRepository.restaurants
 
+    // TODO
+    // private _suggestedDestinations variable of type MutableStateFlow to represent the list of suggested destinations
+    // immutable variable suggestedDestinations of type StateFlow. This is the public read-only variable that can be consumed from the UI.
+    // the UI state cannot be modified unless it is through the ViewModel
+    private val _suggestedDestinations = MutableStateFlow<List<ExploreModel>>(emptyList())
+
+    val suggestedDestinations: StateFlow<List<ExploreModel>> = _suggestedDestinations.asStateFlow()
+
+    init {
+        _suggestedDestinations.value = destinationsRepository.destinations
+    }
+
     fun updatePeople(people: Int) {
         viewModelScope.launch {
             if (people > MAX_PEOPLE) {
             // TODO Codelab: Uncomment
-            //  _suggestedDestinations.value = emptyList()
+              _suggestedDestinations.value = emptyList()
             } else {
                 val newDestinations = withContext(defaultDispatcher) {
                     destinationsRepository.destinations
                         .shuffled(Random(people * (1..100).shuffled().first()))
                 }
                 // TODO Codelab: Uncomment
-                //  _suggestedDestinations.value = newDestinations
+                  _suggestedDestinations.value = newDestinations
             }
         }
     }
@@ -62,7 +77,7 @@ class MainViewModel @Inject constructor(
                     .filter { it.city.nameToDisplay.contains(newDestination) }
             }
             // TODO Codelab: Uncomment
-            //  _suggestedDestinations.value = newDestinations
+              _suggestedDestinations.value = newDestinations
         }
     }
 }
